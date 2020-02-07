@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="myriad-set-pro_bold_3.ttf">
+            <string>MyriadSetPro-Bold</string>
+        </array>
+        <array key="myriad-set-pro_medium.ttf">
+            <string>MyriadSetPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="provienceCell" rowHeight="60" id="4yN-to-WJC" customClass="ProvienceTableViewCell" customModule="OnlineHomeAssement" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="540" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4yN-to-WJC" id="hM2-MT-i1Y">
+                <rect key="frame" x="0.0" y="0.0" width="540" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWh-F0-rgW">
+                        <rect key="frame" x="13" y="10" width="436" height="40"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="WlW-9d-sWK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MyriadSetPro-Bold" family="Myriad Set Pro" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAX-Ja-6KX">
+                        <rect key="frame" x="450" y="0.0" width="70" height="59.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="US" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVX-8r-ONj">
+                                <rect key="frame" x="0.0" y="10" width="70" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyriadSetPro-Medium" family="Myriad Set Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86k-jb-Yoa">
+                                <rect key="frame" x="0.0" y="31.5" width="70" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyriadSetPro-Bold" family="Myriad Set Pro" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="AVq-9M-80Y"/>
+                            <constraint firstAttribute="height" constant="59.5" id="BZ5-Te-sfr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="yWh-F0-rgW" firstAttribute="centerY" secondItem="hM2-MT-i1Y" secondAttribute="centerY" id="3fy-jJ-UYf"/>
+                    <constraint firstItem="yWh-F0-rgW" firstAttribute="leading" secondItem="hM2-MT-i1Y" secondAttribute="leading" constant="13" id="Old-yu-WiJ"/>
+                    <constraint firstItem="KAX-Ja-6KX" firstAttribute="leading" secondItem="yWh-F0-rgW" secondAttribute="trailing" constant="1" id="PDJ-uP-Aec"/>
+                    <constraint firstAttribute="bottom" secondItem="KAX-Ja-6KX" secondAttribute="bottom" id="cpF-GR-hRl"/>
+                    <constraint firstAttribute="trailing" secondItem="KAX-Ja-6KX" secondAttribute="trailing" constant="20" id="eRD-Vy-gwO"/>
+                    <constraint firstItem="KAX-Ja-6KX" firstAttribute="top" secondItem="hM2-MT-i1Y" secondAttribute="top" id="gVx-Pe-OhW"/>
+                    <constraint firstItem="KAX-Ja-6KX" firstAttribute="leading" secondItem="yWh-F0-rgW" secondAttribute="trailing" constant="1" id="n6J-Sw-af9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="code" destination="86k-jb-Yoa" id="08z-Vg-hKy"/>
+                <outlet property="countryCode" destination="yVX-8r-ONj" id="0BO-Vj-CPs"/>
+                <outlet property="name" destination="yWh-F0-rgW" id="YEC-rz-QvT"/>
+            </connections>
+            <point key="canvasLocation" x="650.72463768115949" y="-60.267857142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

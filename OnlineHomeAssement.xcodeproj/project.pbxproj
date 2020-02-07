@@ -1,0 +1,935 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C5AA0D723ECF7F900205894 /* extension+ProvienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AA0D623ECF7F900205894 /* extension+ProvienceViewController.swift */; };
+		8C5AA0DA23ED29DF00205894 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C5AA0D923ED29DF00205894 /* MapKit.framework */; };
+		8C5AA0DC23ED2ADC00205894 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AA0DB23ED2ADB00205894 /* LocationManager.swift */; };
+		8C9F3A6623EB6AF8007C8F91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3A6523EB6AF8007C8F91 /* AppDelegate.swift */; };
+		8C9F3A6823EB6AF8007C8F91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3A6723EB6AF8007C8F91 /* ViewController.swift */; };
+		8C9F3A6B23EB6AF8007C8F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3A6923EB6AF8007C8F91 /* Main.storyboard */; };
+		8C9F3A6E23EB6AF8007C8F91 /* OnlineHomeAssement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3A6C23EB6AF8007C8F91 /* OnlineHomeAssement.xcdatamodeld */; };
+		8C9F3A7023EB6AFA007C8F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3A6F23EB6AFA007C8F91 /* Assets.xcassets */; };
+		8C9F3A7323EB6AFA007C8F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3A7123EB6AFA007C8F91 /* LaunchScreen.storyboard */; };
+		8C9F3A7E23EB6AFA007C8F91 /* OnlineHomeAssementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3A7D23EB6AFA007C8F91 /* OnlineHomeAssementTests.swift */; };
+		8C9F3A8923EB6AFA007C8F91 /* OnlineHomeAssementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3A8823EB6AFA007C8F91 /* OnlineHomeAssementUITests.swift */; };
+		8C9F3A9723EB6B21007C8F91 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3A9623EB6B21007C8F91 /* Utils.swift */; };
+		8C9F3A9A23EB6B2F007C8F91 /* activityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3A9823EB6B2F007C8F91 /* activityIndicator.swift */; };
+		8C9F3A9B23EB6B2F007C8F91 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3A9923EB6B2F007C8F91 /* LoadingOverlay.swift */; };
+		8C9F3AA223EB6C8A007C8F91 /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3AA123EB6C8A007C8F91 /* CountryListViewController.swift */; };
+		8C9F3AA723EB6FBA007C8F91 /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3AA623EB6FBA007C8F91 /* CountryList.swift */; };
+		8C9F3AAA23EB6FF2007C8F91 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3AA923EB6FF2007C8F91 /* CountryTableViewCell.swift */; };
+		8C9F3AAC23EB7028007C8F91 /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3AAB23EB7028007C8F91 /* CountryTableViewCell.xib */; };
+		8C9F3AB023EB7F2B007C8F91 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3AAF23EB7F2B007C8F91 /* Network.swift */; };
+		8C9F3ABC23EB853C007C8F91 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3ABB23EB853C007C8F91 /* Constants.swift */; };
+		8C9F3AC023EBD008007C8F91 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3ABF23EBD008007C8F91 /* NetworkHandler.swift */; };
+		8C9F3AC423EBE162007C8F91 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3AC323EBE162007C8F91 /* ImageService.swift */; };
+		8C9F3AC623EBE9D5007C8F91 /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3AC523EBE9D4007C8F91 /* AppExtension.swift */; };
+		8C9F3AD223EBEA15007C8F91 /* myriad-set-pro_semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3AC823EBEA15007C8F91 /* myriad-set-pro_semibold.ttf */; };
+		8C9F3AD323EBEA15007C8F91 /* myriad-set-pro_ultralight_9.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3AC923EBEA15007C8F91 /* myriad-set-pro_ultralight_9.ttf */; };
+		8C9F3AD423EBEA15007C8F91 /* myriad-set-pro_text.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3ACA23EBEA15007C8F91 /* myriad-set-pro_text.ttf */; };
+		8C9F3AD523EBEA15007C8F91 /* myriad-set-pro_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3ACB23EBEA15007C8F91 /* myriad-set-pro_medium.ttf */; };
+		8C9F3AD623EBEA15007C8F91 /* myriad-set-pro_bold_3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3ACC23EBEA15007C8F91 /* myriad-set-pro_bold_3.ttf */; };
+		8C9F3AD723EBEA15007C8F91 /* myriad-set-pro_ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3ACD23EBEA15007C8F91 /* myriad-set-pro_ultralight.ttf */; };
+		8C9F3AD823EBEA15007C8F91 /* myriad-set-pro_medium_4.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3ACE23EBEA15007C8F91 /* myriad-set-pro_medium_4.ttf */; };
+		8C9F3AD923EBEA15007C8F91 /* myriad-set-pro_semibold_3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3ACF23EBEA15007C8F91 /* myriad-set-pro_semibold_3.ttf */; };
+		8C9F3ADA23EBEA15007C8F91 /* myriad-set-pro_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3AD023EBEA15007C8F91 /* myriad-set-pro_bold.ttf */; };
+		8C9F3ADB23EBEA15007C8F91 /* myriad-set-pro_thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3AD123EBEA15007C8F91 /* myriad-set-pro_thin.ttf */; };
+		8C9F3ADD23ECB660007C8F91 /* ProvincesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3ADC23ECB660007C8F91 /* ProvincesViewController.swift */; };
+		8C9F3AE123ECB863007C8F91 /* ProvinceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3AE023ECB863007C8F91 /* ProvinceList.swift */; };
+		8C9F3AE523ECBA16007C8F91 /* ProvienceTableViewList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3AE423ECBA16007C8F91 /* ProvienceTableViewList.xib */; };
+		8C9F3AE723ECBA37007C8F91 /* ProvienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3AE623ECBA37007C8F91 /* ProvienceTableViewCell.swift */; };
+		8C9F3AED23ECBE28007C8F91 /* ProvienceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3AEC23ECBE28007C8F91 /* ProvienceService.swift */; };
+		8C9F3AF823ECDB06007C8F91 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3AF623ECDB06007C8F91 /* AlertView.swift */; };
+		8C9F3AF923ECDB06007C8F91 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F3AF723ECDB06007C8F91 /* AlertView.xib */; };
+		8C9F3AFE23ECF4CE007C8F91 /* TableViewDelegats+CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9F3AFD23ECF4CE007C8F91 /* TableViewDelegats+CountryListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C9F3A7A23EB6AFA007C8F91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C9F3A5A23EB6AF8007C8F91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C9F3A6123EB6AF8007C8F91;
+			remoteInfo = OnlineHomeAssement;
+		};
+		8C9F3A8523EB6AFA007C8F91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C9F3A5A23EB6AF8007C8F91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C9F3A6123EB6AF8007C8F91;
+			remoteInfo = OnlineHomeAssement;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C5AA0D623ECF7F900205894 /* extension+ProvienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+ProvienceViewController.swift"; sourceTree = "<group>"; };
+		8C5AA0D923ED29DF00205894 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8C5AA0DB23ED2ADB00205894 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8C9F3A6223EB6AF8007C8F91 /* OnlineHomeAssement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineHomeAssement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C9F3A6523EB6AF8007C8F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C9F3A6723EB6AF8007C8F91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C9F3A6A23EB6AF8007C8F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C9F3A6D23EB6AF8007C8F91 /* OnlineHomeAssement.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnlineHomeAssement.xcdatamodel; sourceTree = "<group>"; };
+		8C9F3A6F23EB6AFA007C8F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C9F3A7223EB6AFA007C8F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C9F3A7423EB6AFA007C8F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9F3A7923EB6AFA007C8F91 /* OnlineHomeAssementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineHomeAssementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C9F3A7D23EB6AFA007C8F91 /* OnlineHomeAssementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineHomeAssementTests.swift; sourceTree = "<group>"; };
+		8C9F3A7F23EB6AFA007C8F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9F3A8423EB6AFA007C8F91 /* OnlineHomeAssementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineHomeAssementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C9F3A8823EB6AFA007C8F91 /* OnlineHomeAssementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineHomeAssementUITests.swift; sourceTree = "<group>"; };
+		8C9F3A8A23EB6AFA007C8F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9F3A9623EB6B21007C8F91 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8C9F3A9823EB6B2F007C8F91 /* activityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = activityIndicator.swift; sourceTree = "<group>"; };
+		8C9F3A9923EB6B2F007C8F91 /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		8C9F3AA123EB6C8A007C8F91 /* CountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
+		8C9F3AA623EB6FBA007C8F91 /* CountryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
+		8C9F3AA923EB6FF2007C8F91 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		8C9F3AAB23EB7028007C8F91 /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
+		8C9F3AAF23EB7F2B007C8F91 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		8C9F3ABB23EB853C007C8F91 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8C9F3ABF23EBD008007C8F91 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		8C9F3AC323EBE162007C8F91 /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		8C9F3AC523EBE9D4007C8F91 /* AppExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtension.swift; sourceTree = "<group>"; };
+		8C9F3AC823EBEA15007C8F91 /* myriad-set-pro_semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "myriad-set-pro_semibold.ttf"; sourceTree = "<group>"; };
+		8C9F3AC923EBEA15007C8F91 /* myriad-set-pro_ultralight_9.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "myriad-set-pro_ultralight_9.ttf"; sourceTree = "<group>"; };
+		8C9F3ACA23EBEA15007C8F91 /* myriad-set-pro_text.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "myriad-set-pro_text.ttf"; sourceTree = "<group>"; };
+		8C9F3ACB23EBEA15007C8F91 /* myriad-set-pro_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "myriad-set-pro_medium.ttf"; sourceTree = "<group>"; };
+		8C9F3ACC23EBEA15007C8F91 /* myriad-set-pro_bold_3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "myriad-set-pro_bold_3.ttf"; sourceTree = "<group>"; };
+		8C9F3ACD23EBEA15007C8F91 /* myriad-set-pro_ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "myriad-set-pro_ultralight.ttf"; sourceTree = "<group>"; };
+		8C9F3ACE23EBEA15007C8F91 /* myriad-set-pro_medium_4.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "myriad-set-pro_medium_4.ttf"; sourceTree = "<group>"; };
+		8C9F3ACF23EBEA15007C8F91 /* myriad-set-pro_semibold_3.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "myriad-set-pro_semibold_3.ttf"; sourceTree = "<group>"; };
+		8C9F3AD023EBEA15007C8F91 /* myriad-set-pro_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "myriad-set-pro_bold.ttf"; sourceTree = "<group>"; };
+		8C9F3AD123EBEA15007C8F91 /* myriad-set-pro_thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "myriad-set-pro_thin.ttf"; sourceTree = "<group>"; };
+		8C9F3ADC23ECB660007C8F91 /* ProvincesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvincesViewController.swift; sourceTree = "<group>"; };
+		8C9F3AE023ECB863007C8F91 /* ProvinceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceList.swift; sourceTree = "<group>"; };
+		8C9F3AE423ECBA16007C8F91 /* ProvienceTableViewList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProvienceTableViewList.xib; sourceTree = "<group>"; };
+		8C9F3AE623ECBA37007C8F91 /* ProvienceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvienceTableViewCell.swift; sourceTree = "<group>"; };
+		8C9F3AEC23ECBE28007C8F91 /* ProvienceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvienceService.swift; sourceTree = "<group>"; };
+		8C9F3AF623ECDB06007C8F91 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		8C9F3AF723ECDB06007C8F91 /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		8C9F3AFD23ECF4CE007C8F91 /* TableViewDelegats+CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDelegats+CountryListView.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C9F3A5F23EB6AF8007C8F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5AA0DA23ED29DF00205894 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9F3A7623EB6AFA007C8F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9F3A8123EB6AFA007C8F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C5AA0D823ED29DE00205894 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C5AA0D923ED29DF00205894 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C5AA0DD23ED2AFB00205894 /* Location Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				8C5AA0DB23ED2ADB00205894 /* LocationManager.swift */,
+			);
+			path = "Location Handlers";
+			sourceTree = "<group>";
+		};
+		8C9F3A5923EB6AF8007C8F91 = {
+			isa = PBXGroup;
+			children = (
+				8C9F3A6423EB6AF8007C8F91 /* OnlineHomeAssement */,
+				8C9F3A7C23EB6AFA007C8F91 /* OnlineHomeAssementTests */,
+				8C9F3A8723EB6AFA007C8F91 /* OnlineHomeAssementUITests */,
+				8C9F3A6323EB6AF8007C8F91 /* Products */,
+				8C5AA0D823ED29DE00205894 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C9F3A6323EB6AF8007C8F91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3A6223EB6AF8007C8F91 /* OnlineHomeAssement.app */,
+				8C9F3A7923EB6AFA007C8F91 /* OnlineHomeAssementTests.xctest */,
+				8C9F3A8423EB6AFA007C8F91 /* OnlineHomeAssementUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C9F3A6423EB6AF8007C8F91 /* OnlineHomeAssement */ = {
+			isa = PBXGroup;
+			children = (
+				8C5AA0DD23ED2AFB00205894 /* Location Handlers */,
+				8C9F3AC723EBEA15007C8F91 /* AppFont */,
+				8C9F3ABA23EB83F8007C8F91 /* AppConstants */,
+				8C9F3AB123EB7F38007C8F91 /* AppNetwork */,
+				8C9F3A9E23EB6B79007C8F91 /* AppDelegate */,
+				8C9F3AA323EB6CE8007C8F91 /* AppModule */,
+				8C9F3A9F23EB6B85007C8F91 /* AppViewController */,
+				8C9F3AA023EB6B9B007C8F91 /* AppStoryboard */,
+				8C9F3A9C23EB6B5F007C8F91 /* AppUtils */,
+				8C9F3A9D23EB6B6C007C8F91 /* AppComponent */,
+				8C9F3A6F23EB6AFA007C8F91 /* Assets.xcassets */,
+				8C9F3A7123EB6AFA007C8F91 /* LaunchScreen.storyboard */,
+				8C9F3A7423EB6AFA007C8F91 /* Info.plist */,
+				8C9F3A6C23EB6AF8007C8F91 /* OnlineHomeAssement.xcdatamodeld */,
+			);
+			path = OnlineHomeAssement;
+			sourceTree = "<group>";
+		};
+		8C9F3A7C23EB6AFA007C8F91 /* OnlineHomeAssementTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3A7D23EB6AFA007C8F91 /* OnlineHomeAssementTests.swift */,
+				8C9F3A7F23EB6AFA007C8F91 /* Info.plist */,
+			);
+			path = OnlineHomeAssementTests;
+			sourceTree = "<group>";
+		};
+		8C9F3A8723EB6AFA007C8F91 /* OnlineHomeAssementUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3A8823EB6AFA007C8F91 /* OnlineHomeAssementUITests.swift */,
+				8C9F3A8A23EB6AFA007C8F91 /* Info.plist */,
+			);
+			path = OnlineHomeAssementUITests;
+			sourceTree = "<group>";
+		};
+		8C9F3A9C23EB6B5F007C8F91 /* AppUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AC323EBE162007C8F91 /* ImageService.swift */,
+				8C9F3AC523EBE9D4007C8F91 /* AppExtension.swift */,
+				8C9F3A9623EB6B21007C8F91 /* Utils.swift */,
+			);
+			path = AppUtils;
+			sourceTree = "<group>";
+		};
+		8C9F3A9D23EB6B6C007C8F91 /* AppComponent */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3A9823EB6B2F007C8F91 /* activityIndicator.swift */,
+				8C9F3A9923EB6B2F007C8F91 /* LoadingOverlay.swift */,
+			);
+			path = AppComponent;
+			sourceTree = "<group>";
+		};
+		8C9F3A9E23EB6B79007C8F91 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3A6523EB6AF8007C8F91 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8C9F3A9F23EB6B85007C8F91 /* AppViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3A6723EB6AF8007C8F91 /* ViewController.swift */,
+			);
+			path = AppViewController;
+			sourceTree = "<group>";
+		};
+		8C9F3AA023EB6B9B007C8F91 /* AppStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3A6923EB6AF8007C8F91 /* Main.storyboard */,
+			);
+			path = AppStoryboard;
+			sourceTree = "<group>";
+		};
+		8C9F3AA323EB6CE8007C8F91 /* AppModule */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AFC23ECE845007C8F91 /* Custom Error View */,
+				8C9F3AA423EB6CFB007C8F91 /* CountryListModule */,
+				8C9F3ADF23ECB73E007C8F91 /* ProvinceModule */,
+			);
+			path = AppModule;
+			sourceTree = "<group>";
+		};
+		8C9F3AA423EB6CFB007C8F91 /* CountryListModule */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3ADE23ECB68A007C8F91 /* Service Call */,
+				8C9F3AAD23EB704F007C8F91 /* View */,
+				8C9F3AA823EB6FC2007C8F91 /* Model */,
+				8C9F3AA523EB6F96007C8F91 /* ViewController */,
+			);
+			path = CountryListModule;
+			sourceTree = "<group>";
+		};
+		8C9F3AA523EB6F96007C8F91 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AA123EB6C8A007C8F91 /* CountryListViewController.swift */,
+				8C9F3AFD23ECF4CE007C8F91 /* TableViewDelegats+CountryListView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8C9F3AA823EB6FC2007C8F91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AA623EB6FBA007C8F91 /* CountryList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C9F3AAD23EB704F007C8F91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AAE23EB70A8007C8F91 /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C9F3AAE23EB70A8007C8F91 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AA923EB6FF2007C8F91 /* CountryTableViewCell.swift */,
+				8C9F3AAB23EB7028007C8F91 /* CountryTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		8C9F3AB123EB7F38007C8F91 /* AppNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AAF23EB7F2B007C8F91 /* Network.swift */,
+			);
+			path = AppNetwork;
+			sourceTree = "<group>";
+		};
+		8C9F3ABA23EB83F8007C8F91 /* AppConstants */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3ABB23EB853C007C8F91 /* Constants.swift */,
+			);
+			path = AppConstants;
+			sourceTree = "<group>";
+		};
+		8C9F3AC723EBEA15007C8F91 /* AppFont */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AC823EBEA15007C8F91 /* myriad-set-pro_semibold.ttf */,
+				8C9F3AC923EBEA15007C8F91 /* myriad-set-pro_ultralight_9.ttf */,
+				8C9F3ACA23EBEA15007C8F91 /* myriad-set-pro_text.ttf */,
+				8C9F3ACB23EBEA15007C8F91 /* myriad-set-pro_medium.ttf */,
+				8C9F3ACC23EBEA15007C8F91 /* myriad-set-pro_bold_3.ttf */,
+				8C9F3ACD23EBEA15007C8F91 /* myriad-set-pro_ultralight.ttf */,
+				8C9F3ACE23EBEA15007C8F91 /* myriad-set-pro_medium_4.ttf */,
+				8C9F3ACF23EBEA15007C8F91 /* myriad-set-pro_semibold_3.ttf */,
+				8C9F3AD023EBEA15007C8F91 /* myriad-set-pro_bold.ttf */,
+				8C9F3AD123EBEA15007C8F91 /* myriad-set-pro_thin.ttf */,
+			);
+			path = AppFont;
+			sourceTree = "<group>";
+		};
+		8C9F3ADE23ECB68A007C8F91 /* Service Call */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3ABF23EBD008007C8F91 /* NetworkHandler.swift */,
+			);
+			path = "Service Call";
+			sourceTree = "<group>";
+		};
+		8C9F3ADF23ECB73E007C8F91 /* ProvinceModule */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AEE23ECBE35007C8F91 /* Service Call */,
+				8C9F3AE323ECB9DE007C8F91 /* ViewController */,
+				8C9F3AE223ECB9D3007C8F91 /* Model */,
+				8C9F3AE823ECBA3E007C8F91 /* View */,
+			);
+			path = ProvinceModule;
+			sourceTree = "<group>";
+		};
+		8C9F3AE223ECB9D3007C8F91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AE023ECB863007C8F91 /* ProvinceList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C9F3AE323ECB9DE007C8F91 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3ADC23ECB660007C8F91 /* ProvincesViewController.swift */,
+				8C5AA0D623ECF7F900205894 /* extension+ProvienceViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8C9F3AE823ECBA3E007C8F91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AE923ECBA47007C8F91 /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C9F3AE923ECBA47007C8F91 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AE423ECBA16007C8F91 /* ProvienceTableViewList.xib */,
+				8C9F3AE623ECBA37007C8F91 /* ProvienceTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		8C9F3AEE23ECBE35007C8F91 /* Service Call */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AEC23ECBE28007C8F91 /* ProvienceService.swift */,
+			);
+			path = "Service Call";
+			sourceTree = "<group>";
+		};
+		8C9F3AFC23ECE845007C8F91 /* Custom Error View */ = {
+			isa = PBXGroup;
+			children = (
+				8C9F3AF723ECDB06007C8F91 /* AlertView.xib */,
+				8C9F3AF623ECDB06007C8F91 /* AlertView.swift */,
+			);
+			path = "Custom Error View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C9F3A6123EB6AF8007C8F91 /* OnlineHomeAssement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C9F3A8D23EB6AFA007C8F91 /* Build configuration list for PBXNativeTarget "OnlineHomeAssement" */;
+			buildPhases = (
+				8C9F3A5E23EB6AF8007C8F91 /* Sources */,
+				8C9F3A5F23EB6AF8007C8F91 /* Frameworks */,
+				8C9F3A6023EB6AF8007C8F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnlineHomeAssement;
+			productName = OnlineHomeAssement;
+			productReference = 8C9F3A6223EB6AF8007C8F91 /* OnlineHomeAssement.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C9F3A7823EB6AFA007C8F91 /* OnlineHomeAssementTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C9F3A9023EB6AFA007C8F91 /* Build configuration list for PBXNativeTarget "OnlineHomeAssementTests" */;
+			buildPhases = (
+				8C9F3A7523EB6AFA007C8F91 /* Sources */,
+				8C9F3A7623EB6AFA007C8F91 /* Frameworks */,
+				8C9F3A7723EB6AFA007C8F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C9F3A7B23EB6AFA007C8F91 /* PBXTargetDependency */,
+			);
+			name = OnlineHomeAssementTests;
+			productName = OnlineHomeAssementTests;
+			productReference = 8C9F3A7923EB6AFA007C8F91 /* OnlineHomeAssementTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C9F3A8323EB6AFA007C8F91 /* OnlineHomeAssementUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C9F3A9323EB6AFA007C8F91 /* Build configuration list for PBXNativeTarget "OnlineHomeAssementUITests" */;
+			buildPhases = (
+				8C9F3A8023EB6AFA007C8F91 /* Sources */,
+				8C9F3A8123EB6AFA007C8F91 /* Frameworks */,
+				8C9F3A8223EB6AFA007C8F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C9F3A8623EB6AFA007C8F91 /* PBXTargetDependency */,
+			);
+			name = OnlineHomeAssementUITests;
+			productName = OnlineHomeAssementUITests;
+			productReference = 8C9F3A8423EB6AFA007C8F91 /* OnlineHomeAssementUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C9F3A5A23EB6AF8007C8F91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Ritesh Patil";
+				TargetAttributes = {
+					8C9F3A6123EB6AF8007C8F91 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					8C9F3A7823EB6AFA007C8F91 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 8C9F3A6123EB6AF8007C8F91;
+					};
+					8C9F3A8323EB6AFA007C8F91 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 8C9F3A6123EB6AF8007C8F91;
+					};
+				};
+			};
+			buildConfigurationList = 8C9F3A5D23EB6AF8007C8F91 /* Build configuration list for PBXProject "OnlineHomeAssement" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C9F3A5923EB6AF8007C8F91;
+			productRefGroup = 8C9F3A6323EB6AF8007C8F91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C9F3A6123EB6AF8007C8F91 /* OnlineHomeAssement */,
+				8C9F3A7823EB6AFA007C8F91 /* OnlineHomeAssementTests */,
+				8C9F3A8323EB6AFA007C8F91 /* OnlineHomeAssementUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C9F3A6023EB6AF8007C8F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9F3AAC23EB7028007C8F91 /* CountryTableViewCell.xib in Resources */,
+				8C9F3AF923ECDB06007C8F91 /* AlertView.xib in Resources */,
+				8C9F3A7323EB6AFA007C8F91 /* LaunchScreen.storyboard in Resources */,
+				8C9F3AE523ECBA16007C8F91 /* ProvienceTableViewList.xib in Resources */,
+				8C9F3AD823EBEA15007C8F91 /* myriad-set-pro_medium_4.ttf in Resources */,
+				8C9F3AD523EBEA15007C8F91 /* myriad-set-pro_medium.ttf in Resources */,
+				8C9F3AD423EBEA15007C8F91 /* myriad-set-pro_text.ttf in Resources */,
+				8C9F3AD623EBEA15007C8F91 /* myriad-set-pro_bold_3.ttf in Resources */,
+				8C9F3A7023EB6AFA007C8F91 /* Assets.xcassets in Resources */,
+				8C9F3AD223EBEA15007C8F91 /* myriad-set-pro_semibold.ttf in Resources */,
+				8C9F3A6B23EB6AF8007C8F91 /* Main.storyboard in Resources */,
+				8C9F3AD323EBEA15007C8F91 /* myriad-set-pro_ultralight_9.ttf in Resources */,
+				8C9F3ADB23EBEA15007C8F91 /* myriad-set-pro_thin.ttf in Resources */,
+				8C9F3AD923EBEA15007C8F91 /* myriad-set-pro_semibold_3.ttf in Resources */,
+				8C9F3ADA23EBEA15007C8F91 /* myriad-set-pro_bold.ttf in Resources */,
+				8C9F3AD723EBEA15007C8F91 /* myriad-set-pro_ultralight.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9F3A7723EB6AFA007C8F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9F3A8223EB6AFA007C8F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C9F3A5E23EB6AF8007C8F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9F3AB023EB7F2B007C8F91 /* Network.swift in Sources */,
+				8C9F3AF823ECDB06007C8F91 /* AlertView.swift in Sources */,
+				8C5AA0D723ECF7F900205894 /* extension+ProvienceViewController.swift in Sources */,
+				8C9F3AAA23EB6FF2007C8F91 /* CountryTableViewCell.swift in Sources */,
+				8C9F3A6823EB6AF8007C8F91 /* ViewController.swift in Sources */,
+				8C9F3A6E23EB6AF8007C8F91 /* OnlineHomeAssement.xcdatamodeld in Sources */,
+				8C9F3AA223EB6C8A007C8F91 /* CountryListViewController.swift in Sources */,
+				8C9F3A6623EB6AF8007C8F91 /* AppDelegate.swift in Sources */,
+				8C9F3ADD23ECB660007C8F91 /* ProvincesViewController.swift in Sources */,
+				8C9F3AA723EB6FBA007C8F91 /* CountryList.swift in Sources */,
+				8C9F3ABC23EB853C007C8F91 /* Constants.swift in Sources */,
+				8C9F3AC023EBD008007C8F91 /* NetworkHandler.swift in Sources */,
+				8C9F3AE723ECBA37007C8F91 /* ProvienceTableViewCell.swift in Sources */,
+				8C9F3AC623EBE9D5007C8F91 /* AppExtension.swift in Sources */,
+				8C5AA0DC23ED2ADC00205894 /* LocationManager.swift in Sources */,
+				8C9F3A9A23EB6B2F007C8F91 /* activityIndicator.swift in Sources */,
+				8C9F3AED23ECBE28007C8F91 /* ProvienceService.swift in Sources */,
+				8C9F3A9723EB6B21007C8F91 /* Utils.swift in Sources */,
+				8C9F3AFE23ECF4CE007C8F91 /* TableViewDelegats+CountryListView.swift in Sources */,
+				8C9F3A9B23EB6B2F007C8F91 /* LoadingOverlay.swift in Sources */,
+				8C9F3AC423EBE162007C8F91 /* ImageService.swift in Sources */,
+				8C9F3AE123ECB863007C8F91 /* ProvinceList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9F3A7523EB6AFA007C8F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9F3A7E23EB6AFA007C8F91 /* OnlineHomeAssementTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9F3A8023EB6AFA007C8F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9F3A8923EB6AFA007C8F91 /* OnlineHomeAssementUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C9F3A7B23EB6AFA007C8F91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C9F3A6123EB6AF8007C8F91 /* OnlineHomeAssement */;
+			targetProxy = 8C9F3A7A23EB6AFA007C8F91 /* PBXContainerItemProxy */;
+		};
+		8C9F3A8623EB6AFA007C8F91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C9F3A6123EB6AF8007C8F91 /* OnlineHomeAssement */;
+			targetProxy = 8C9F3A8523EB6AFA007C8F91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C9F3A6923EB6AF8007C8F91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C9F3A6A23EB6AF8007C8F91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C9F3A7123EB6AFA007C8F91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C9F3A7223EB6AFA007C8F91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C9F3A8B23EB6AFA007C8F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C9F3A8C23EB6AFA007C8F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C9F3A8E23EB6AFA007C8F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Z6S67UJZU;
+				INFOPLIST_FILE = OnlineHomeAssement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindBody.OnlineHomeAssement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8C9F3A8F23EB6AFA007C8F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Z6S67UJZU;
+				INFOPLIST_FILE = OnlineHomeAssement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindBody.OnlineHomeAssement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8C9F3A9123EB6AFA007C8F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnlineHomeAssementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindBody.OnlineHomeAssementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineHomeAssement.app/OnlineHomeAssement";
+			};
+			name = Debug;
+		};
+		8C9F3A9223EB6AFA007C8F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnlineHomeAssementTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindBody.OnlineHomeAssementTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnlineHomeAssement.app/OnlineHomeAssement";
+			};
+			name = Release;
+		};
+		8C9F3A9423EB6AFA007C8F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnlineHomeAssementUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindBody.OnlineHomeAssementUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnlineHomeAssement;
+			};
+			name = Debug;
+		};
+		8C9F3A9523EB6AFA007C8F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnlineHomeAssementUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MindBody.OnlineHomeAssementUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OnlineHomeAssement;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C9F3A5D23EB6AF8007C8F91 /* Build configuration list for PBXProject "OnlineHomeAssement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C9F3A8B23EB6AFA007C8F91 /* Debug */,
+				8C9F3A8C23EB6AFA007C8F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C9F3A8D23EB6AFA007C8F91 /* Build configuration list for PBXNativeTarget "OnlineHomeAssement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C9F3A8E23EB6AFA007C8F91 /* Debug */,
+				8C9F3A8F23EB6AFA007C8F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C9F3A9023EB6AFA007C8F91 /* Build configuration list for PBXNativeTarget "OnlineHomeAssementTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C9F3A9123EB6AFA007C8F91 /* Debug */,
+				8C9F3A9223EB6AFA007C8F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C9F3A9323EB6AFA007C8F91 /* Build configuration list for PBXNativeTarget "OnlineHomeAssementUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C9F3A9423EB6AFA007C8F91 /* Debug */,
+				8C9F3A9523EB6AFA007C8F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8C9F3A6C23EB6AF8007C8F91 /* OnlineHomeAssement.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8C9F3A6D23EB6AF8007C8F91 /* OnlineHomeAssement.xcdatamodel */,
+			);
+			currentVersion = 8C9F3A6D23EB6AF8007C8F91 /* OnlineHomeAssement.xcdatamodel */;
+			path = OnlineHomeAssement.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8C9F3A5A23EB6AF8007C8F91 /* Project object */;
+}
