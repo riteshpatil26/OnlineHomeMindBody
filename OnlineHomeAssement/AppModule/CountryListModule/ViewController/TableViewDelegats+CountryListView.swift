@@ -28,27 +28,32 @@ extension CountryListViewController: UITableViewDelegate,UITableViewDataSource{
         }
         cell.flagImage.contentMode = .scaleAspectFill
         cell.flagImage.clipsToBounds = true
+        if let checkedUrl = URL(string: "https:www.countryflags.io/\(self.countryArray[indexPath.row].code!)/flat/64.png"){
+                    cell.activityIndicator.startAnimating()
+         
+                    print(checkedUrl)
+                    ImageService.getImage(withURL: checkedUrl) { image in
         
-        //        if let checkedUrl = URL(string: "https://www.countryflags.io/be/flat/\(self.countryArray[indexPath.row].id!).png"){
-        //            cell.activityIndicator.startAnimating()
-        //            ImageService.getImage(withURL: checkedUrl) { image in
-        //
-        //
-        //                if(image == nil){
-        //                    print(checkedUrl)
-        //                    print("image nil yetey")
-        //                }else{
-        //                    cell.flagImage.image = image
-        //
-        //                }
-        //                cell.activityIndicator.stopAnimating()
-        //                cell.activityIndicator.hidesWhenStopped = true
-        //
-        //
-        //            }
-        //        }
-        //
         
+                        if(image == nil){
+                            print(checkedUrl)
+                            print("image nil yetey")
+                            cell.flagImage.image = UIImage(named: "mindBody")
+                        }else{
+                            print(checkedUrl)
+                            print("Image Aali")
+                            cell.flagImage.image = image
+        
+                        }
+                        cell.activityIndicator.stopAnimating()
+                        cell.activityIndicator.hidesWhenStopped = true
+        
+        
+                    }
+                }
+ 
+ 
+    
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

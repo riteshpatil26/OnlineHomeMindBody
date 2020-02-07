@@ -22,7 +22,7 @@ class CountryListViewController: UIViewController,RetryButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.navigationController?.navigationBar.barTintColor = kTABLEVIEW_SEPARATOR_COLOR
+        self.navigationController?.navigationBar.barTintColor = kTABLEVIEW_SEPARATOR_COLOR_WITH_ALPHA
         self.title = "COUNTRY LISTS"
         let nipName=UINib(nibName:"CountryTableViewCell", bundle:nil)
         self.countryTableView.register(nipName, forCellReuseIdentifier:tableViewIdentifire)

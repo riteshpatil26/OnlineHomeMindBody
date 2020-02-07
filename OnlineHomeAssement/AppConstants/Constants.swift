@@ -10,3 +10,4 @@ import Foundation
 import UIKit
 let BASE_URL = "https://connect.mindbodyonline.com/rest"
 let kTABLEVIEW_SEPARATOR_COLOR = UIColor(red: 232.0 / 255.0, green: 88.0 / 255.0, blue: 27.0 / 255.0, alpha: 1)
+let kTABLEVIEW_SEPARATOR_COLOR_WITH_ALPHA = UIColor(red: 232.0 / 255.0, green: 88.0 / 255.0, blue: 27.0 / 255.0, alpha: 0.5)
