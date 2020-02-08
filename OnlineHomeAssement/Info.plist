@@ -48,6 +48,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Location information is required to determine the user&apos;s speed and location.</string>
 		<string>myriad-set-pro_ultralight_9.ttf</string>
 		<string>myriad-set-pro_ultralight.ttf</string>
 		<string>myriad-set-pro_semibold_3.ttf</string>

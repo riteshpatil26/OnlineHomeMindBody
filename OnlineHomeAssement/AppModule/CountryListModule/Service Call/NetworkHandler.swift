@@ -8,7 +8,7 @@
 
 import Foundation
 extension CountryListViewController{
-    func getWeatherCondition() {
+    func getCountryLists() {
         let APIUrl = NSURL(string:"\(BASE_URL)/worldregions/country")
         let sessionConfig = URLSessionConfiguration.default
         sessionConfig.timeoutIntervalForRequest = 20.0

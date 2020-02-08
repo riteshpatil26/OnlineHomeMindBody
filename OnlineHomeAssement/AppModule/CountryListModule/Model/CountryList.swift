@@ -9,8 +9,7 @@
 import UIKit
 
 class CountryList: NSObject,NSCoding {
-
-    //MARK: Response Parser Variables-----------------
+   //MARK: Response Parser Variables-----------------
     var id:Int!
     var name:String!
     var code :String!
@@ -30,7 +29,6 @@ class CountryList: NSObject,NSCoding {
         
     }
     init(dictData:Dictionary<String,AnyObject>){
-        
         if let top = dictData["ID"] as? Int{
             self.id = top
         }
@@ -47,7 +45,6 @@ class CountryList: NSObject,NSCoding {
         }else{
             self.phoneCode = "-"
         }
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -63,8 +60,7 @@ class CountryList: NSObject,NSCoding {
         if let phoneCode = aDecoder.decodeObject(forKey: "PhoneCode") as? String{
             self.phoneCode = phoneCode
         }
-        
-    }
+     }
     func encode(with aCoder: NSCoder){
         aCoder.encode(id, forKey: "ID")
         aCoder.encode(name, forKey: "Name")
@@ -77,7 +73,4 @@ class CountryList: NSObject,NSCoding {
         aCoder.encode(code, forKey: "Code")
         aCoder.encode(phoneCode, forKey: "PhoneCode")
     }
-    
-    
-    
 }

@@ -76,7 +76,6 @@ class ProvincesViewController: UIViewController,RetryButtonDelegate {
             
             let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
             let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: latitudeDelta, longitudeDelta: longitudeDelta))
-            
             let address = [CNPostalAddressStreetKey: locationName]
             let place = MKPlacemark(coordinate: center, addressDictionary: address)
             self.mapView.addAnnotation(place)

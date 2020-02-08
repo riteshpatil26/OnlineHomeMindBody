@@ -8,16 +8,17 @@
 
 import UIKit
 
-class CountryListViewController: UIViewController,RetryButtonDelegate {
+class CountryListViewController: UIViewController,RetryButtonDelegate,UISearchBarDelegate {
     //#MARK:IBOutlets and Actions
     @IBOutlet weak var countryTableView: UITableView!
     @IBOutlet weak var logoimage: UIImageView!
-    //#MARK:Local Variables
+    let searchController = UISearchController(searchResultsController: nil)
+   //#MARK:Local Variables
     public var tableViewIdentifire : String = "countryCell"
     public var countryArray : Array<CountryList> = Array<CountryList>()
     let objeOverlay = LoadingOverlay()
     public let refreshControl = UIRefreshControl()
-    
+    var searchArray:Array<CountryList> = Array<CountryList>()
     //#MARK:Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,7 @@ class CountryListViewController: UIViewController,RetryButtonDelegate {
         self.countryTableView.separatorColor = kTABLEVIEW_SEPARATOR_COLOR
         self.countryTableView.alpha = 0
         retryDelegate = self
+        addSearchBarController()
         if #available(iOS 10.0, *) {
             countryTableView.refreshControl = refreshControl
         } else {
@@ -47,7 +49,7 @@ class CountryListViewController: UIViewController,RetryButtonDelegate {
             self.callCountryListApi()
         }
     }
-    /* This Methods Calls when Pull to Refresh of TableView. */
+    /* This Methods Calls when Pull to Refresh of TableView */
     @objc private func refreshWeatherData(_ sender: Any) {
         callCountryListApi()
     }
@@ -57,7 +59,7 @@ class CountryListViewController: UIViewController,RetryButtonDelegate {
     public func callCountryListApi(){
         self.objeOverlay.showOverlay(view: self.view)
         if Network.iSConnectedToNetwork(){
-            self.getWeatherCondition()
+            self.getCountryLists()
         }else{
             self.objeOverlay.hideOverlayView()
             AlertView.instance.showAlert(title: "Failure", message: "No Internet connection.", alertType: .failure)
@@ -68,5 +70,24 @@ class CountryListViewController: UIViewController,RetryButtonDelegate {
      Implement Retry Delegate Methods */
     func retryButton(){
         callCountryListApi()
+    }
+}
+/* Search Functionalities  */
+extension CountryListViewController: UISearchResultsUpdating {
+    func addSearchBarController(){
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        countryTableView.tableHeaderView = searchController.searchBar
+        searchController.searchBar.barTintColor = kTABLEVIEW_SEPARATOR_COLOR_WITH_ALPHA
+    }
+    func updateSearchResults(for searchController: UISearchController) {
+        filterCountries(for: searchController.searchBar.text ?? "")
+    }
+    func filterCountries(for searchText: String){
+        searchArray = countryArray.filter { country in
+            return country.name.lowercased().contains(searchText.lowercased())
+        }
+        countryTableView.reloadData()
     }
 }
