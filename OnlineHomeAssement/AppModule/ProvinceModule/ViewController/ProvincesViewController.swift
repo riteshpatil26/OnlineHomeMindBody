@@ -37,8 +37,7 @@ class ProvincesViewController: UIViewController,RetryButtonDelegate {
         callProvienceList()
         setLocationAccordingToProvience(string: countryName, latitudeDelta: 50.0, longitudeDelta: 50.0)
     }
-    /* Fetch the provience List
-     */
+    /* Fetch the provience List */
     override func viewWillAppear(_ animated: Bool) {
         noDataLabel.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height)
         noDataLabel.text = "No records Found.This Country has no Proviences"
@@ -67,18 +66,18 @@ class ProvincesViewController: UIViewController,RetryButtonDelegate {
             AlertView.instance.showAlert(title: "Failure", message: "No Internet connection.", alertType: .failure)
         }
     }
+    /* Selection of place on Map According to Country-Wise */
     public func setLocationAccordingToProvience(string :String,latitudeDelta:Double,longitudeDelta:Double) {
-        
         let locationName = string
-
         self.locationManager.getLocation(forPlaceCalled: locationName) { location in
             guard let location = location else { return }
-            
             let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
             let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: latitudeDelta, longitudeDelta: longitudeDelta))
-            let address = [CNPostalAddressStreetKey: locationName]
-            let place = MKPlacemark(coordinate: center, addressDictionary: address)
-            self.mapView.addAnnotation(place)
+            let annotation = MKPointAnnotation()
+            self.mapView.removeAnnotation(annotation)
+            annotation.coordinate = center
+            annotation.title = "\(locationName)"
+            self.mapView.addAnnotation(annotation)
             self.mapView.setRegion(region, animated: true)
         }
     }

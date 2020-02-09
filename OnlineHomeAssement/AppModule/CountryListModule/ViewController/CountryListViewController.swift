@@ -41,7 +41,7 @@ class CountryListViewController: UIViewController,RetryButtonDelegate,UISearchBa
         refreshControl.tintColor = kTABLEVIEW_SEPARATOR_COLOR
         /*
          This will fade out logo and hit API Call and get result
-         */
+        */
         UIView.animate(withDuration: 1.0, animations: {
             self.logoimage.alpha = 0
         })
