@@ -60,5 +60,11 @@
 		<string>myriad-set-pro_medium_4.ttf</string>
 		<string>myriad-set-pro_medium.ttf</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>&quot;Location information is required to determine the location&quot;</string>
+	<key>NSLocationUsageDescription</key>
+	<string>&quot;Location information is required to determine the location&quot;</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>&quot;Location information is required to determine the location&quot;</string>
 </dict>
 </plist>
